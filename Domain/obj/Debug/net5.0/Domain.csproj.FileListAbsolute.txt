@@ -10,3 +10,6 @@ F:\study\OnlineShop\Online-Shop\Online-Shop\Domain\obj\Debug\net5.0\Domain.cspro
 F:\study\OnlineShop\Online-Shop\Online-Shop\Domain\obj\Debug\net5.0\Domain.dll
 F:\study\OnlineShop\Online-Shop\Online-Shop\Domain\obj\Debug\net5.0\ref\Domain.dll
 F:\study\OnlineShop\Online-Shop\Online-Shop\Domain\obj\Debug\net5.0\Domain.pdb
+F:\study\OnlineShop\Online-Shop\Online-Shop\Domain\bin\Debug\net5.0\Domain.runtimeconfig.json
+F:\study\OnlineShop\Online-Shop\Online-Shop\Domain\bin\Debug\net5.0\Domain.runtimeconfig.dev.json
+F:\study\OnlineShop\Online-Shop\Online-Shop\Domain\obj\Debug\net5.0\Domain.genruntimeconfig.cache

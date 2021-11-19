@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using WebUi.Configuration;
+using Domain.Extensions;
 
 namespace WebUi
 {
@@ -25,6 +26,8 @@ namespace WebUi
             {
                 x.SwaggerDoc("v1", new OpenApiInfo{Title = "Online Shop API", Version = "v1"});
             });
+
+            services.AddDbContext(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
