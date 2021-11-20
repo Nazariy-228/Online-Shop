@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Domain.DataConfiguration
 {
-    public class ContactsConfiguration : IEntityTypeConfiguration<Contacts>
+    sealed class ContactsConfiguration : IEntityTypeConfiguration<Contacts>
     {
         public void Configure(EntityTypeBuilder<Contacts> builder)
         {

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Domain.DataConfiguration
 {
-    public class IncidentsConfiguration : IEntityTypeConfiguration<Incidents>
+    sealed class IncidentsConfiguration : IEntityTypeConfiguration<Incidents>
     {
         public void Configure(EntityTypeBuilder<Incidents> builder)
         {

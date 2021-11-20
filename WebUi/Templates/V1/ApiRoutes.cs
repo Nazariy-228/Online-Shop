@@ -12,5 +12,20 @@ namespace WebUi.Templates.V1
         {
             public const string GetAll = $"{Base}/orders";
         }
+        
+        public static class Account
+        {
+            public const string Accounts = $"{Base}/account";
+        }
+        
+        public static class Contact
+        {
+            public const string Contacts = $"{Base}/contact";
+        }
+        
+        public static class Incident
+        {
+            public const string Incidents = $"{Base}/incident";
+        }
     }
 }

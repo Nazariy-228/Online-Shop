@@ -1,10 +1,8 @@
 using System;
-using System.Security.Principal;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Domain.Entities
+namespace Application.Dto.V1
 {
-    public sealed class Contacts : IEntity
+    public class ContactsDto
     {
         public Guid Id { get; set; }
 
@@ -14,6 +12,5 @@ namespace Domain.Entities
 
         public string? Email { get; set; }
         
-        public Accounts? Account { get; set; }
     }
 }

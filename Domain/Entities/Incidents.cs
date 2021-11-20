@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities
 {
-    public class Incidents : IEntity
+    public sealed class Incidents : IEntity
     {
         public string? Name { get; set; }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Domain.Entities
 {
-    public class Accounts : IEntity
+    public sealed class Accounts : IEntity
     {
         public Guid Id { get; set; }
         

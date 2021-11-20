@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Domain.DataConfiguration
 {
-    public class AccountsConfiguration : IEntityTypeConfiguration<Accounts>
+    sealed class AccountsConfiguration : IEntityTypeConfiguration<Accounts>
     {
         public void Configure(EntityTypeBuilder<Accounts> builder)
         {
