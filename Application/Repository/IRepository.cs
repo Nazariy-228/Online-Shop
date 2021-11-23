@@ -13,7 +13,7 @@ namespace Application.Repository
         Task<TEntity> AddAsync(TEntity entity);
         Task AddRangeAsync(IEnumerable<TEntity> entities);
         Task DeleteRangeAsync(IEnumerable<TEntity> entities);
-        Task<IEntity> UpdateAsync(TEntity entity);
+        Task<TEntity> UpdateAsync(TEntity entity);
         Task<int> SaveChangesAsync();
         ValueTask<TEntity> GetByIdAsync(params object[] keys);
         void Delete(TEntity entity);

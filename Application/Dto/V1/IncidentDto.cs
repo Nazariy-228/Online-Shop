@@ -1,6 +1,6 @@
 namespace Application.Dto.V1
 {
-    public class IncidentsDto
+    public class IncidentDto
     {
         public string? Name { get; set; }
 

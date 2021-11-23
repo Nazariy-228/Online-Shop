@@ -4,11 +4,11 @@ using Domain.Entities;
 
 namespace Application.Mapping.V1
 {
-    class ContactMapper : Profile
+    public class ContactMapper : Profile
     {
         public ContactMapper()
         {
-            CreateMap<Contacts, ContactsDto>().ReverseMap();
+            CreateMap<ContactDto, Contacts>().ReverseMap();
         }
     }
 }

@@ -4,11 +4,11 @@ using Domain.Entities;
 
 namespace Application.Mapping.V1
 {
-    class IncidentMapper : Profile
+    public class IncidentMapper : Profile
     {
         public IncidentMapper()
         {
-            CreateMap<Incidents, IncidentsDto>().ReverseMap();
+            CreateMap<IncidentDto, Incidents>().ReverseMap();
         }
     }
 }

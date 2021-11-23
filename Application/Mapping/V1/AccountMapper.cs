@@ -8,7 +8,8 @@ namespace Application.Mapping.V1
     {
         public AccountMapping()
         {
-            CreateMap<Accounts, AccountsDto>().ReverseMap();
+            CreateMap<AccountDto, Accounts>().ReverseMap();
+            CreateMap<AccountDto, ContactDto>().ReverseMap();
         }
     }
 }

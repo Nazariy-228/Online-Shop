@@ -27,5 +27,10 @@ namespace WebUi.Templates.V1
         {
             public const string Incidents = $"{Base}/incident";
         }
+        
+        public static class Case
+        {
+            public const string Cases = $"{Base}/case";
+        }
     }
 }
