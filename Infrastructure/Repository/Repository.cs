@@ -47,7 +47,7 @@ namespace Infrastructure.Repository
             await Task.Run(() => entities.ToList().ForEach(i => _context.Entry(i).State = EntityState.Deleted));
         }
 
-        public async Task<IEntity> UpdateAsync(TEntity entity)
+        public async Task<TEntity> UpdateAsync(TEntity entity)
         {
             return await Task.Run(() => _entities.Update(entity).Entity);
         }

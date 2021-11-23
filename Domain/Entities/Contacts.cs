@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Domain.Entities
 {
-    public class Contacts : IEntity
+    public sealed class Contacts : IEntity
     {
         public Guid Id { get; set; }
 

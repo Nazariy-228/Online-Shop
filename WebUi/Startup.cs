@@ -1,3 +1,5 @@
+using System;
+using Application.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -6,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using WebUi.Configuration;
 using Domain.Extensions;
+using Infrastructure.Services;
 
 namespace WebUi
 {
@@ -22,11 +25,18 @@ namespace WebUi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            
             services.AddSwaggerGen(x =>
             {
                 x.SwaggerDoc("v1", new OpenApiInfo{Title = "Online Shop API", Version = "v1"});
             });
 
+            services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<ICaseService, CaseService>();
+            services.AddScoped<IContactService, ContactService>();
+            services.AddScoped<IIncidentService, IncidentService>();
+            
             services.AddDbContext(Configuration);
         }
 
